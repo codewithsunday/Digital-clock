@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "FX_LED";
+    src: url("fonts/FX-LED.TTF");
+}
+
+@font-face {
+    font-family: "Hack";
+    src: url("fonts/Hack-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('ds-digital.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DSEG7';
+    src: url('DSEG7-Classic.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(image/clock\ background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.digital-clock {
+    /* background: #555555; */
+    padding: 20px;
+    /* border-radius: 5px; */
+    text-align: center;
+    /* border: 3px solid #ffffff; */
+    display: inline-block;
+    position: relative;
+    width: 300px;
+}
+
+#date {
+
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'DSEG7-Classic';
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-shadow:
+        0 0 5px #00f7ff,
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff;
+}
+
+#time {
+    font-size: 6rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    padding-right: 35px;
+    text-shadow:
+        0 0 5px #00f7ff,
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff;
+}
+
+#seconds {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ffffff;
+    font-family: 'DSEG7-Classic';
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-shadow:
+        0 0 5px #00f7ff,
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff;
+}
